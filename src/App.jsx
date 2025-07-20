@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 
 const loder= document.getElementById('loder');
 window.addEventListener('load',function(){
-  loder.style.dis = 'none'
+  loder.style.display = 'none'
 })
 function App() {
   return (
