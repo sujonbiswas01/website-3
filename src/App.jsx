@@ -11,10 +11,14 @@ import Inpact from './components/Inpact'
 import Outbound from './components/Outbound'
 import Footer from './components/Footer'
 
+const loder= document.getElementById('loder');
+window.addEventListener('load',function(){
+  loder.style.dis = 'none'
+})
 function App() {
   return (
     <>
-      <div>
+      <div >
         <Header />
         <main className='max-w-[1440px] mx-auto overflow-x-hidden'>
           <Hero/>

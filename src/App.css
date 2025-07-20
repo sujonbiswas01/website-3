@@ -1,3 +1,11 @@
 .active{
   background-color: aqua;
 }
+.loder{
+  background: #000 url(/loder.gif) center no-repeat ;
+  background-size: cover;
+  width: 100% !important;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
