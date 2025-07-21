@@ -11,10 +11,6 @@ import Inpact from './components/Inpact'
 import Outbound from './components/Outbound'
 import Footer from './components/Footer'
 
-const loder= document.getElementById('loder');
-window.addEventListener('load',function(){
-  loder.style.display = 'none'
-})
 function App() {
   return (
     <>
@@ -36,3 +32,8 @@ function App() {
 }
 
 export default App
+
+ const loder = document.querySelector('.loder');
+window.addEventListener('load',()=>{
+  loder.style.display = 'none'
+})
