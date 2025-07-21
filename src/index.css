@@ -3,7 +3,31 @@
   --color-primary:#0ff1f6;
   --font-montserrat: "Montserrat", sans-serif;
 }
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(36, 36, 36);
+  
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient( #79716b,#8200db);
+  border-radius: 6px;
+  transition: all 0.5s;
 
+}
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient( #46403c,#6200a3);
+  border-radius: 6px;
+
+}
+
+body::selection{
+  background-color: rgb(0, 168, 14);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding: 10px ;
+}
 @import "tailwindcss";
 @plugin '../hero.ts';
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
